@@ -8,6 +8,3 @@ Sample B column: 4
 # If coverage is known:
 Sample A Coverage: 0.0631
 Sample B Coverage: 0.0681 
-
-# If you which to change the TCR (True Count Range) from its default 99% CI:
-#TCR Change: 95
