@@ -1,16 +1,4 @@
-# CORNAS: a method to determine DEG from single-paired comparisons based independently on the sample's coverage.
-#
-# PROs:
-# 1) For non-replicated conditions.
-# 2) Fast.
-# 3) Single Rscript makes it extensible.
-# 4) Does not require normalization step.
-#
-# CONs:
-# 1) Does not have replicated condition evaluation yet.
-# 2) Evaluation is crude, and does not have a scoring matrix, i.e. p-value.
-# 
-
+# CORNAS: Coverage-dependent RNA-Seq analysis of gene expression data without biological replicates
 
 
 ######## Functions ########
