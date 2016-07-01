@@ -1,5 +1,5 @@
 # CORNAS #
-CORNAS (Coverage-dependent RNA-Seq) is a fast method that is able to reliably make DEG calls in non-replicated conditions. CORNAS works on gene lists with number of mapped reads (counts). CORNAS is written in [R](https://www.r-project.org/), and can either be run in the commandline with Rscript, or be run in the R console. The package contains two files:
+CORNAS (Coverage-dependent RNA-Seq) is a fast method that is able to reliably make DEG calls in unreplicated conditions. CORNAS works on gene lists with number of mapped reads (counts). CORNAS is written in [R](https://www.r-project.org/), and can either be run in the commandline with Rscript, or be run in the R console. The package contains two files:
 
 1. `CORNAS.R`
 2. `cornas.config`
@@ -19,7 +19,7 @@ There are two ways to use this package:
 		source("/path/to/CORNAS.R")
 		cornas("/path/to/config" , "/path/to/datatable")
 
-The `datatable` input file must contain at least three tab-separated columns; one for the Gene/Transcript/Fragment ID and two for sample counts. The file must not contain any column headers.
+The `datatable` input file must contain at least three tab-separated columns; one for the Gene/Transcript/Fragment ID, and two for sample counts. The file must not contain any column headers.
 
 Crucial to the run is the preparation of the configuration file. The template is provided in `cornas.config`. The next section explains the configuration file, followed by a section with a prepared example (`example_run` directory).
 
@@ -30,8 +30,8 @@ The configuration file stores the parameters needed for the run. The value for e
 
 ### Compulsory: 
 1. **Gene Name** = The column which contains the IDs.
-2. **Sample A column** = The column with observed counts for the first sample
-3. **Sample B column** =  The column with observed counts for the second sample
+2. **Sample A column** = The column with observed counts for the first sample.
+3. **Sample B column** =  The column with observed counts for the second sample.
 	
 ### Compulsory coverage option choice of either:
 1. Option A: If coverage is known.
@@ -45,7 +45,7 @@ The sequencing coverage is the number of total reads (observed counts) divided b
 
 
 ### Optional:
-1. **Alpha** = If you wish to change the alpha from it's default of 99%. Reducing this percentage will increase sensitivity of making DEG calls.
+1. **Alpha** = If you wish to change the alpha from the default 99%. Reducing this percentage will increase sensitivity of making DEG calls.
 2. **Fold threshold** = Sets the fold cut-off for signifance. Default is 1.5. Reducing this percentage will increase sensitivity of making DEG calls.
 
 For further information on the parameters, please refer to the CORNAS paper.
@@ -68,7 +68,7 @@ Given your working directory is in `example_run` and you wish to save the output
 
 		cornasExample1 <- cornas("cornas.config.test4" , "test4_kidneyliver_example.tab")
 
-You may than print `cornasExample1` to file, or do further processing in R.
+You may then print `cornasExample1` to file, or do further processing in R.
 
 
 ## References ##
