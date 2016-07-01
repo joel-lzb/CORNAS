@@ -78,6 +78,6 @@ Marioni, John C., et al. "RNA-seq: an assessment of technical reproducibility an
 
 
 ## AUTHORS & COPYRIGHT ##
-CORNAS was developed by Joel Low Zi-Bin, Tsung Fei Khang & Martti T. Tammi.
+CORNAS was developed by Joel Z.B. Low, Tsung Fei Khang & Martti T. Tammi.
 
 Copyright is under MIT license (see LICENSE.txt).
