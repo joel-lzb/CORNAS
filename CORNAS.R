@@ -20,11 +20,12 @@ calcitall <-function(sampleID,sampCount,params) {
 		sampling_cov = totalReads/samplePopSize
 	}
 	
-	# calculating the gradient: y=mx+c
-	m = 1.383529
-	c = -0.025983
-	mgrad = exp(m * sampling_cov + c)
-
+	# DEPRECATED: calculating the gradient: y=mx+c
+	#m = 1.383529
+	#c = -0.025983
+	#mgrad = exp(m * sampling_cov + c)
+	mgrad = 1/(1-sampling_cov) #hypergeometric func.
+	
 	# Output
 	return (c(sampling_cov,mgrad,maxSample,totalReads))
 }
