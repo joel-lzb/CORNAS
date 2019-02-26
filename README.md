@@ -48,7 +48,23 @@ The sequencing coverage is the number of total reads (observed counts) divided b
 1. **Alpha** = If you wish to change the alpha from the default 99%. Reducing this percentage will increase sensitivity of making DEG calls.
 2. **Fold threshold** = Sets the fold cut-off for signifance. Default is 1.5. Reducing this percentage will increase sensitivity of making DEG calls.
 
-For further information on the parameters, please refer to the CORNAS paper.
+For further information on the parameters, please refer to the [CORNAS paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1974-4).
+
+
+
+## Output ##
+The 10 columns from left to right are:
+1. **Gene_Name** = The identifier of the gene as provided in the input file.
+2. **DEG_call** = Whether the gene is differentially expressed according to the thresholds set: Yes (Y) or No (N).
+3. **Express_higher** = If DEG_call == Y, then which Sample has the higher expression (A or B), otherwise "-".
+4. **Fold_difference** = The fold difference/change of the gene expression between the Sample with higher expression over the other Sample.
+5. **A_O-count** = The observed count in Sample A (as provided in the input file).
+6. **B_O-count** = The observed count in Sample B (as provided in the input file).
+7. **A_T-lower** = The lower bound of the posterior distribution of true counts in Sample A.
+8. **A_T-upper** = The upper bound of the posterior distribution of true counts in Sample A.
+9. **B_T-lower** = The lower bound of the posterior distribution of true counts in Sample B.
+10. **B_T-upper** = The upper bound of the posterior distribution of true counts in Sample B.
+
 
 
 ## Example run ##
