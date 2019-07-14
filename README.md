@@ -41,7 +41,7 @@ The configuration file stores the parameters needed for the run. The value for e
 
 2. Option B: With the total read counts for each sample. 
 	
-The sequencing coverage is the number of total reads (observed counts) divided by the actual amount of fragments present in the PCR mix. While we have calculated it to be close to 300,000,000 (3M), you should calculate the sample coverages in your experiments and add in the the coverages (Option A). Otherwise, the program will calculate the coverage with the detected total reads over 3M per sample from the `datatable` file (Option B).
+The sequencing coverage is the number of total reads (observed counts) divided by the actual amount of fragments present in the PCR mix. While we have calculated it to be close to 300,000,000 (300M), you should calculate the sample coverages in your experiments and add in the the coverages (Option A). Otherwise, the program will calculate the coverage with the detected total reads over 300M per sample from the `datatable` file (Option B).
 
 
 ### Optional:
